@@ -13,6 +13,19 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  <build>
+  <plugins>
+<plugin>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.7.0</version>
+    <configuration>
+        <fork>true</fork>
+        <executable>/usr/lib/jvm/java-11-openjdk-amd64/bin/javac</executable>
+    </configuration>
+</plugin>
+</plugins>
+<finalName>java-jenkins-docker</finalName>
+</build>
 
   <dependencies>
    <dependency>
